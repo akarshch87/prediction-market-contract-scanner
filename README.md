@@ -58,7 +58,7 @@ Use an overlap window around an operator-managed watermark in production to redu
 
 Rules may require domain interpretation beyond deterministic checks. LLM output is triage, not adjudication. Public metadata can change, API pagination/watermark semantics can evolve, and the default scanner does not submit alerts externally. Never imply Kalshi endorsement.
 
-See [`docs/METHODOLOGY.md`](docs/METHODOLOGY.md), [`docs/GIT_GUIDE.md`](docs/GIT_GUIDE.md).
+See `docs/METHODOLOGY.md` (in the source archive), `docs/GIT_GUIDE.md` (in the source archive).
 
 ## Verified prototype scope
 
@@ -68,5 +68,5 @@ Changed records persist their raw payload and preserve first-seen time. Determin
 
 The `.env.example` lists design/configuration examples; this CLI does not automatically load dotenv settings. Use the command-line options documented above. Automatic watermark scheduling, production alert delivery, and a configured semantic provider remain extensions.
 
-See [provenance](docs/PROVENANCE.md), [configuration](docs/CONFIGURATION.md), and [current validation](docs/VALIDATION.md).
+See provenance (in the source archive), configuration (in the source archive), and current validation (in the source archive).
 `kalshi-scan evaluate-contracts --sample examples/labeled-contracts.json` derives predictions from the validators and compares them with explicit synthetic labels. Freeze a representative manually labeled sample with a documented sampling frame before using this path to make a real quality claim.
